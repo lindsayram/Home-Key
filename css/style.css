@@ -127,7 +127,7 @@ main > section > article > p i{
     margin-top: 20px;
 }
 
-.card img{
+.seconde-partie .card img{
     max-width: 270.64px;
     border-radius: 15px 15px 0 0;
 }
@@ -136,6 +136,8 @@ main > section > article > p i{
     display: flex;
     justify-content:space-between;
 }
+
+/* Aside */
 
 aside{
     max-width:33%;
@@ -149,6 +151,14 @@ aside{
 
 .aside-partie .card{
     background-color: var(--white);
+    display: flex;
+    max-width: 335px;
+}
+
+.aside-partie .card img{
+    width: 95px;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
 }
 
 .troisieme-partie{
@@ -179,7 +189,7 @@ footer a{
     margin: auto;
     display: flex;
     gap:20%;
-    background-color: #c1c1c1;
+    background-color: var(--lightgrey);
     padding: 50px;
 }
 
