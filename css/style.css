@@ -4,6 +4,15 @@
 
 *{ 
     margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --black:#000;
+    --red:#f60303;
+    --white:#fff;
+    --grey:#c1c1c1;
+    --lightgrey:#f1f1f1;
 }
 
 h2{
@@ -17,14 +26,12 @@ h3{
 /* Header */
 
 header{
-    padding: 0 20px;
+    padding: 15px 20px;
     max-width:1440px;
     margin: auto;
-}
-
-header nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header ul{
@@ -43,25 +50,120 @@ header a{
 main{
     max-width: 1440px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
-.barre-recherche{
-    margin: 20px 0;
+main > section > article{
+    margin: 30px 0;
+}
+
+.recherche{
+    display: flex;
 }
 
 section button{
     background-color: #f60303;
     color: white;
-    border-radius: 20px;
+    border-radius: 5px;
+    border: 1px solid #f60303;
 }
 
 .filtres{
     max-width: 1440px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
+
+.filtres i{
+    color: rgb(246, 3, 3);
+}
+
+.filtres a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #f60303;
+    border-radius: 10px;
+    padding: 7px 10px;
+}
+
+main > section > article > p i{
+    color: rgb(246, 3, 3);
+}
+
+.seconde-partie{
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    max-width: 66%;
+    padding: 30px 0;
+}
+
+.seconde-partie i{
+    color: rgb(246, 3, 3);
+}
+
+.seconde-partie h2{
+    padding-left: 45px;
+}
+
+.seconde-partie a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px 40px;
+    
+}
+
+.seconde-partie .card{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.card img{
+    max-width: 270.64px;
+    border-radius: 15px 15px 0 0;
+}
+
+#accomodations{
+    display: flex;
+    justify-content:space-between;
+}
+
+aside{
+    max-width:33%;
+}
+
+.aside-partie{
+    background-color: var(--lightgrey);
+    padding: 30px;
+    border-radius: 15px
+}
+
+.aside-partie .card{
+    background-color: var(--white);
+}
+
+.troisieme-partie{
+    max-width: 1440px;
+}
+
+.troisieme-partie img{
+    max-width:322.5px;
+}
+
+.card-troisieme{
+    display: flex;
+}
+
 /* Footer */
-
-
 
 footer ul{
     list-style: none;
