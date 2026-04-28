@@ -56,14 +56,14 @@ header nav a{
     text-decoration: none;
     color: var(--black);
     padding-top: 15px;
-}
 
-header nav a:hover{
-        border-top: 2px solid var(--red);
-        width: 50%;
-        padding-top: 50px; 
-        transition: all 0.2s ease; 
+    &:hover{
+    border-top: 2px solid var(--red);
+    width: 50%;
+    padding-top: 50px; 
+    transition: all 0.2s ease; 
     }
+}
 
 /* Main */
 
@@ -106,7 +106,12 @@ section button{
 
 .filtres i{
     color: var(--red);
+
+    &:hover{
+    color: var(--white)
 }
+}
+/* a et i doivent hover ensemble */
 
 .filtres a{
     text-decoration: none;
@@ -114,8 +119,12 @@ section button{
     border: 1px solid var(--red);
     border-radius: 10px;
     padding: 7px 10px;
+    
+    &:hover{
+    background-color: var(--red);
+    color: var(--white);
+    }
 }
-
 
 main > section > article > p i{
     color: var(--red);
@@ -167,6 +176,11 @@ main > section > article > p i{
     height: 160px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+
+    &:hover{
+    filter:grayscale(100%);
+    transform: scale (1.02);
+    }
 }
 
 .seconde-partie h3{
@@ -228,6 +242,11 @@ main > section > article > p i{
     width: 95px;
     height: 160px;
     border-radius: 15px 0 0 15px;
+    
+    &:hover{
+    filter:grayscale(100%);
+    transform:scale (1.02);
+    }
 }
 
 .aside-partie i{
@@ -295,6 +314,11 @@ main > section > article > p i{
     object-fit: cover;
     height: 380px;
     border-radius: 15px 15px 0 0;
+    
+    &:hover{
+    filter:grayscale(100%);
+    transform:scale (1.02);
+    }
 }
 
 .card-troisieme{
@@ -323,6 +347,10 @@ footer ul{
 footer a{
     text-decoration: none;
     color:var(--black);
+
+    &:hover{
+        color: var(--red);
+    }
 }
 
 .pied-de-page li{
