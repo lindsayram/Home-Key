@@ -43,7 +43,7 @@ header ul{
 
 header a{
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 /* Main */
@@ -62,10 +62,10 @@ main > section > article{
 }
 
 section button{
-    background-color: #f60303;
-    color: white;
+    background-color: var(--red);
+    color: var(--white);
     border-radius: 5px;
-    border: 1px solid #f60303;
+    border: 1px solid var(--red);
 }
 
 .filtres{
@@ -76,30 +76,34 @@ section button{
 }
 
 .filtres i{
-    color: rgb(246, 3, 3);
+    color: var(--red);
 }
 
 .filtres a{
     text-decoration: none;
-    color: black;
-    border: 1px solid #f60303;
+    color: var(--black);
+    border: 1px solid var(--red);
     border-radius: 10px;
     padding: 7px 10px;
 }
 
 main > section > article > p i{
-    color: rgb(246, 3, 3);
+    color: var(--red);
 }
 
 .seconde-partie{
-    background-color: #f1f1f1;
+    background-color: var(--lightgrey);
     border-radius: 15px;
     max-width: 66%;
     padding: 30px 0;
 }
 
 .seconde-partie i{
-    color: rgb(246, 3, 3);
+    color: var(--red);
+}
+
+.seconde-partie i.grey{
+    color: var(--grey);
 }
 
 .seconde-partie h2{
@@ -108,7 +112,7 @@ main > section > article > p i{
 
 .seconde-partie a{
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 .cards{
@@ -121,8 +125,8 @@ main > section > article > p i{
 }
 
 .seconde-partie .card{
-    background-color: white;
-    border: 2px solid white;
+    background-color: var(--white);
+    border: 2px solid var(--white);
     border-radius: 15px;
     margin-top: 20px;
 }
@@ -161,6 +165,14 @@ aside{
     border-radius: 15px 0 0 15px;
 }
 
+.aside-partie i{
+    color: var(--red);
+}
+
+.aside-partie i.grey{
+    color: var(--grey);
+}
+
 .troisieme-partie{
     max-width: 1440px;
 }
@@ -181,7 +193,7 @@ footer ul{
 }
 footer a{
     text-decoration: none;
-    color:black;
+    color:var(--black);
 }
 
 .pied-de-page{
