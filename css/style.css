@@ -39,6 +39,7 @@ header ul{
     align-items: center;
     gap: 20px;
     list-style: none;
+    padding-right: 10px;
 }
 
 header a{
@@ -58,6 +59,15 @@ main > section > article{
     margin: 30px 0;
 }
 
+form i{
+    color: var(--white);
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    padding: 3px 4px;
+}
+
 .recherche{
     display: flex;
 }
@@ -65,7 +75,7 @@ main > section > article{
 section button{
     background-color: var(--red);
     color: var(--white);
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     border: 1px solid var(--red);
 }
 
@@ -87,6 +97,7 @@ section button{
     border-radius: 10px;
     padding: 7px 10px;
 }
+
 
 main > section > article > p i{
     color: var(--red);
@@ -230,6 +241,10 @@ footer ul{
 footer a{
     text-decoration: none;
     color:var(--black);
+}
+
+.pied-de-page li{
+    margin: 10px 0;
 }
 
 .pied-de-page{
