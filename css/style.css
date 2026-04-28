@@ -191,14 +191,34 @@ main > section > article > p i{
 
 .troisieme-partie{
     max-width: 1440px;
+    margin-bottom: 40px;
+}
+
+.troisieme-partie h2{
+    margin-bottom: 40px;
+}
+
+.troisieme-partie h3{
+    text-align: center;
+    padding: 20px 0;
 }
 
 .troisieme-partie img{
-    max-width:322.5px;
+    width: 100%;
+    object-fit: cover;
+    height: 380px;
+    border-radius: 15px 15px 0 0;
 }
 
 .card-troisieme{
     display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.card-troisieme .card{
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 15px;
 }
 
 /* Footer */
