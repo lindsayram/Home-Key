@@ -132,7 +132,8 @@ main > section > article > p i{
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
-    padding: 20px 40px; 
+    padding: 20px 40px;
+    gap: 40px; 
 }
 
 .seconde-partie .card{
@@ -140,11 +141,14 @@ main > section > article > p i{
     border: 2px solid var(--white);
     border-radius: 15px;
     margin-top: 20px;
+    flex: 1 0 27%;
 }
 
 .seconde-partie .card img{
-    max-width: 270.64px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
+    
 }
 
 #accomodations{
@@ -230,6 +234,7 @@ main > section > article > p i{
 .card-troisieme .card{
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
     border-radius: 15px;
+    flex: 1 0 27%;
 }
 
 /* Footer */
