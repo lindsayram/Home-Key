@@ -47,6 +47,7 @@ header a{
 }
 
 /* Main */
+
 main{
     max-width: 1440px;
     margin: auto;
@@ -115,13 +116,12 @@ main > section > article > p i{
     color: var(--black);
 }
 
-.cards{
+.seconde-partie .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
-    padding: 20px 40px;
-    
+    padding: 20px 40px; 
 }
 
 .seconde-partie .card{
@@ -139,24 +139,29 @@ main > section > article > p i{
 #accomodations{
     display: flex;
     justify-content:space-between;
+    margin-bottom: 40px;
 }
 
 /* Aside */
 
-aside{
-    max-width:33%;
-}
 
 .aside-partie{
     background-color: var(--lightgrey);
     padding: 30px;
-    border-radius: 15px
+    border-radius: 15px;
+}
+
+.aside-partie .cards{
+    max-width: 335px;
+    margin-top: 40px;
 }
 
 .aside-partie .card{
     background-color: var(--white);
     display: flex;
-    max-width: 335px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--white);
 }
 
 .aside-partie .card img{
@@ -171,6 +176,17 @@ aside{
 
 .aside-partie i.grey{
     color: var(--grey);
+}
+
+.aside-partie h2{
+    margin-bottom: 10px;
+}
+
+.aside-partie .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
 }
 
 .troisieme-partie{
