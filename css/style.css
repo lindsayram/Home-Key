@@ -225,11 +225,6 @@ main > section > article > p i{
     border-radius: 15px;
 }
 
-.aside-partie .cards{
-    max-width: 335px;
-    margin-top: 40px;
-}
-
 .aside-partie .card a{
     background-color: var(--white);
     display: flex;
@@ -370,3 +365,42 @@ footer a{
     text-align: center;
     padding: 30px 0;
 }
+
+/* Format tablette */
+
+@media (max-width: 1024px){
+    #accomodations{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .seconde-partie{
+        max-width: 100%;
+    }
+
+    .seconde-partie .card{
+        flex: 1 0 40%;
+    }
+
+    .aside-partie .cards{
+        max-width: 100%;
+    }
+
+    .aside-partie img{
+        width: 30%;
+    }
+
+    .card-troisieme{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .troisieme-partie .card{
+        flex: 1 0 47%;;
+        width:50%;
+    }
+}
+
+/* Format téléphone */
+
