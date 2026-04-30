@@ -77,10 +77,9 @@ header nav a{
     padding-top: 15px;
 
     &:hover{
-    border-top: 2px solid var(--red);
-    width: 50%;
-    padding-top: 50px; 
-    transition: all 0.2s ease; 
+        border-top: 2px solid var(--red);
+        padding-top: 50px; 
+        transition: all 0.2s ease; 
     }
 }
 
@@ -178,6 +177,14 @@ main > section > article > p i{
     color: var(--black);
 }
 
+.seconde-partie > a{
+    text-decoration: none;
+    color: var(--black);
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .seconde-partie .cards{
     display: flex;
     flex-wrap: wrap;
@@ -246,19 +253,18 @@ main > section > article > p i{
     margin-bottom: 30px;
     border-radius: 15px;
     border: 2px solid var(--white);
-}
 
+    &:hover{
+    filter:grayscale(100%);
+    transform:scale(1.02);
+    }
+}
 
 .aside-partie .card img{
     width: 95px;
     height: 160px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
-    
-    &:hover{
-    filter:grayscale(100%);
-    transform:scale(1.02);
-    }
 }
 
 .aside-partie i{
@@ -316,7 +322,7 @@ main > section > article > p i{
     margin-bottom: 40px;
 }
 
-.troisieme-partie h4{
+.troisieme-partie h3{
     text-align: center;
     padding: 20px 0;
 }
@@ -326,11 +332,6 @@ main > section > article > p i{
     object-fit: cover;
     height: 380px;
     border-radius: 15px 15px 0 0;
-    
-    &:hover{
-    filter:grayscale(100%);
-    transform:scale(1.02);
-    }
 }
 
 .card-troisieme{
@@ -348,6 +349,11 @@ main > section > article > p i{
 .troisieme-partie a{
     text-decoration: none;
     color: var(--black);
+
+    &:hover{
+    filter:grayscale(100%);
+    transform:scale(1.02);
+    }
 }
 
 /* Footer */
@@ -421,28 +427,39 @@ footer a{
     
     header{
         flex-direction: column;
+        > a{
+            display: flex;
+            justify-content: center;
+        }
         
         ul{
             padding: 0 30px;
             display: flex;
             justify-content: center;
 
-            li a{
-                padding-bottom: 15px;
-                display: flex;
-                justify-content: center;
-}
-                &:hover{
-                    border-top: none;
-                    border-bottom: 1px solid red;
-                    padding-top:0;
+            li{
+                width: -webkit-fill-available;
+                text-align: center;
+                border-bottom: 1px solid var(--lightgrey);
+
+                    a{
+                        display: block;
+                        padding-bottom: 15px;
+
+                        &:hover{
+                            padding-top: 15px;
+                            border-top: none;
+                            border-bottom: 1px solid var(--red);
+                        }
                     }
-                }
+            }
         }
+
         img{
             margin-left: 40px;
         }
     }
+    
     .hidden{
         display: block;
     }
@@ -464,7 +481,7 @@ footer a{
         width: 20%;
     }
 
-    .seconde-partie .card{
+    .troisieme-partie .card{
         flex: 1 0 47%;
     }
 
@@ -482,3 +499,4 @@ footer a{
         flex-direction: column;
         gap: 30px;
     }
+}
