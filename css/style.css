@@ -56,11 +56,6 @@ header{
     justify-content: space-between;
 }
 
-header > a{
-    display: flex;
-    justify-content: center;
-}
-
 header img{
     padding-top: 15px;
 }
@@ -213,10 +208,6 @@ main > section > article > p i{
     filter:grayscale(100%);
     transform:scale(1.02);
     }
-}
-
-.seconde-partie h3{
-    padding: 30px 45px;
 }
 
 .seconde-partie .etoiles{
@@ -438,6 +429,9 @@ footer a{
 
             li a{
                 padding-bottom: 15px;
+                display: flex;
+                justify-content: center;
+}
                 &:hover{
                     border-top: none;
                     border-bottom: 1px solid red;
@@ -488,4 +482,3 @@ footer a{
         flex-direction: column;
         gap: 30px;
     }
-}
