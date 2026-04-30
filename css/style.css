@@ -1,10 +1,13 @@
-/* Général*/
+/* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Général*/
+
 *{ 
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family:var(--primary-font);
+    scroll-behavior:smooth; /*défiler la page en effet scrollant*/
 }
 
 :root{
@@ -13,18 +16,34 @@
     --white:#fff;
     --grey:#c1c1c1;
     --lightgrey:#f1f1f1;
+    --primary-font: "Open Sans", sans-serif; 
 }
 
+h1,
 h2{
     font-size: 22px;
+    font-weight: 700;
 }
 
 h3{
-   font-size: 18px; 
+    font-size: 16px;
+    font-weight: 700;
 }
 
-h4{
+p{
     font-size: 16px;
+}
+
+a{
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    color: var(--black);
+    text-decoration: none;
+
+    &:hover{
+        color: var(--red);
+        transition: all 0.2s ease-in-out;
+    }
 }
 
 /* Header */
@@ -35,6 +54,11 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+
+header > a{
+    display: flex;
+    justify-content: center;
 }
 
 header img{
@@ -90,16 +114,21 @@ form i{
     display: flex;
 }
 
-section button{
+button{
     background-color: var(--red);
     color: var(--white);
     border-radius: 0 5px 5px 0;
     border: 1px solid var(--red);
 }
 
+.hidden{
+    display: none;
+}
+
 .filtres{
     max-width: 1440px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     align-items: center;
 }
@@ -109,7 +138,7 @@ section button{
 
     &:hover{
     color: var(--white)
-}
+    }
 }
 /* a et i doivent hover ensemble */
 
@@ -169,6 +198,9 @@ main > section > article > p i{
     border-radius: 15px;
     margin-top: 20px;
     flex: 1 0 27%;
+    position: relative;
+    box-shadow: 0px 2px 15px var(--grey);
+    overflow: hidden;
 }
 
 .seconde-partie .card img{
@@ -179,7 +211,7 @@ main > section > article > p i{
 
     &:hover{
     filter:grayscale(100%);
-    transform: scale (1.1);
+    transform:scale(1.02);
     }
 }
 
@@ -195,25 +227,17 @@ main > section > article > p i{
     display: flex;
     justify-content:space-between;
     margin-bottom: 40px;
-}
-
-.card .superposition{
-    position: relative;
-    z-index: 1;
+    gap: 40px;
 }
 
 .superposition p{
     position: absolute;
-    z-index: 2;
     background-color: var(--red);
     color: var(--white);
-    left: 55%;
-    top: -160px;
+    right: 10px;
+    top: 10px;
     border-radius: 5px;
     padding: 5px;
-}
-
-.superposition p{
     font-size:13px
 }
 
@@ -233,14 +257,16 @@ main > section > article > p i{
     border: 2px solid var(--white);
 }
 
+
 .aside-partie .card img{
     width: 95px;
     height: 160px;
+    object-fit: cover;
     border-radius: 15px 0 0 15px;
     
     &:hover{
     filter:grayscale(100%);
-    transform:scale (1.02);
+    transform:scale(1.02);
     }
 }
 
@@ -312,7 +338,7 @@ main > section > article > p i{
     
     &:hover{
     filter:grayscale(100%);
-    transform:scale (1.02);
+    transform:scale(1.02);
     }
 }
 
@@ -342,11 +368,7 @@ footer ul{
 footer a{
     text-decoration: none;
     color:var(--black);
-
-    &:hover{
-        color: var(--red);
     }
-}
 
 .pied-de-page li{
     margin: 10px 0;
@@ -387,8 +409,8 @@ footer a{
         max-width: 100%;
     }
 
-    .aside-partie img{
-        width: 30%;
+    .aside-partie .card img{
+        width: 150px;
     }
 
     .card-troisieme{
@@ -404,3 +426,66 @@ footer a{
 
 /* Format téléphone */
 
+@media (max-width: 767px){
+    
+    header{
+        flex-direction: column;
+        
+        ul{
+            padding: 0 30px;
+            display: flex;
+            justify-content: center;
+
+            li a{
+                padding-bottom: 15px;
+                &:hover{
+                    border-top: none;
+                    border-bottom: 1px solid red;
+                    padding-top:0;
+                    }
+                }
+        }
+        img{
+            margin-left: 40px;
+        }
+    }
+    .hidden{
+        display: block;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .filtres{
+        gap: 9px;
+    }
+
+    #accomodations{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .aside-partie .card img{
+        width: 20%;
+    }
+
+    .seconde-partie .card{
+        flex: 1 0 47%;
+    }
+
+    .troisieme-partie{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .troisieme-partie .card{
+        flex: 1 0 48%;
+    }
+    
+    .pied-de-page{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
